@@ -84,7 +84,7 @@ class DetailPage extends StatelessWidget {
     );
 
     return Scaffold(
-      body: Column(
+      body: ListView(
         children: <Widget>[topContent, bottomContent],
       ),
     );
