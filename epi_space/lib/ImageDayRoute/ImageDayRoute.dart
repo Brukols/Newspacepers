@@ -9,7 +9,13 @@ class ImageDayRoute extends StatelessWidget {
         HttpService http = HttpService();
         Future<Map> elems = http.getNasaRequest();
 
-        final NasaTitle = FutureBuilder(
+        final loaderPage = Container(
+            alignment: Alignment.topCenter,
+            margin: EdgeInsets.only(top: 250),
+            child: CircularProgressIndicator()
+        );
+
+        final nasaTitle = FutureBuilder(
             future: elems,
             builder: (context, map) {
                 if (map.hasData) {
@@ -23,11 +29,11 @@ class ImageDayRoute extends StatelessWidget {
                         ),
                     ));
                 }
-                return (Text(""));
+                return (loaderPage);
             }
         );
 
-        final NasaImage = FutureBuilder(
+        final nasaImage = FutureBuilder(
             future: elems,
             builder: (context, map) {
                 if (map.hasData)
@@ -117,7 +123,7 @@ class ImageDayRoute extends StatelessWidget {
                 title: Text("Photo du jour"),
             ),
             body: ListView(
-                children: <Widget>[NasaImage, NasaTitle, date, iconQuote, explanation],
+                children: <Widget>[nasaImage, nasaTitle, date, iconQuote, explanation],
             )
         );
     }
