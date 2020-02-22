@@ -1,11 +1,6 @@
-import 'dart:convert' as convert;
-
 import 'package:flutter/material.dart';
-import 'package:epi_space/ImageDayRoute/NasaApi.dart';
 import 'package:epi_space/ImageDayRoute/HttpService.dart';
-import 'package:http/http.dart';
 import 'package:transparent_image/transparent_image.dart';
-import 'package:pinch_zoom_image/pinch_zoom_image.dart';
 
 class ImageDayRoute extends StatelessWidget {
 

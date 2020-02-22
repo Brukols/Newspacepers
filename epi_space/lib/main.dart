@@ -11,7 +11,7 @@ class MyApp extends StatelessWidget {
       title: 'Flutter Demo',
       theme: new ThemeData(
           primaryColor: Color.fromRGBO(29, 31, 72, 1.0), fontFamily: 'Raleway'),
-      home: new ListPage(title: 'FakeNews'),
+      home: new ListPage(title: 'News'),
     );
   }
 }
