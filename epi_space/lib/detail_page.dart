@@ -6,32 +6,12 @@ class DetailPage extends StatelessWidget {
   DetailPage({Key key, this.fakenews}) : super(key: key);
   @override
   Widget build(BuildContext context) {
-    final levelIndicator = Container(
-      child: Container(
-        child: LinearProgressIndicator(
-            backgroundColor: Color.fromRGBO(209, 224, 224, 0.2),
-            value: fakenews.indicatorValue,
-            valueColor: AlwaysStoppedAnimation(Colors.green)),
-      ),
-    );
-
-    final coursePrice = Container(
-      padding: const EdgeInsets.all(7.0),
-      decoration: new BoxDecoration(
-          border: new Border.all(color: Colors.white),
-          borderRadius: BorderRadius.circular(5.0)),
-      child: new Text(
-        "\$" + fakenews.price.toString(),
-        style: TextStyle(color: Colors.white),
-      ),
-    );
-
     final topContentText = Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: <Widget>[
-        SizedBox(height: 120.0),
+        SizedBox(height: 80.0),
         Icon(
-          Icons.directions_car,
+          Icons.fiber_new,
           color: Colors.white,
           size: 40.0,
         ),
@@ -42,23 +22,7 @@ class DetailPage extends StatelessWidget {
         SizedBox(height: 10.0),
         Text(
           fakenews.title,
-          style: TextStyle(color: Colors.white, fontSize: 45.0),
-        ),
-        SizedBox(height: 30.0),
-        Row(
-          mainAxisAlignment: MainAxisAlignment.start,
-          children: <Widget>[
-            Expanded(flex: 1, child: levelIndicator),
-            Expanded(
-                flex: 6,
-                child: Padding(
-                    padding: EdgeInsets.only(left: 10.0),
-                    child: Text(
-                      fakenews.level,
-                      style: TextStyle(color: Colors.white),
-                    ))),
-            Expanded(flex: 1, child: coursePrice)
-          ],
+          style: TextStyle(color: Colors.white, fontSize: 25.0),
         ),
       ],
     );
@@ -67,7 +31,7 @@ class DetailPage extends StatelessWidget {
       children: <Widget>[
         Container(
             padding: EdgeInsets.only(left: 10.0),
-            height: MediaQuery.of(context).size.height * 0.5,
+            height: MediaQuery.of(context).size.height * 0.45,
             decoration: new BoxDecoration(
               image: new DecorationImage(
                 image: new AssetImage("assets/test.jpg"),
@@ -75,8 +39,8 @@ class DetailPage extends StatelessWidget {
               ),
             )),
         Container(
-          height: MediaQuery.of(context).size.height * 0.5,
-          padding: EdgeInsets.all(40.0),
+          height: MediaQuery.of(context).size.height * 0.45,
+          padding: EdgeInsets.all(30.0),
           width: MediaQuery.of(context).size.width,
           decoration: BoxDecoration(color: Color.fromRGBO(58, 66, 86, .9)),
           child: Center(
