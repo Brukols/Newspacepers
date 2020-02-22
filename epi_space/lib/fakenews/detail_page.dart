@@ -9,7 +9,7 @@ class DetailPage extends StatelessWidget {
     final topContentText = Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: <Widget>[
-        SizedBox(height: 80.0),
+        SizedBox(height: 65.0),
         Icon(
           Icons.fiber_new,
           color: Colors.white,
@@ -48,8 +48,8 @@ class DetailPage extends StatelessWidget {
           ),
         ),
         Positioned(
-          left: 8.0,
-          top: 60.0,
+          left: 20.0,
+          top: 30.0,
           child: InkWell(
             onTap: () {
               Navigator.pop(context);
