@@ -2,10 +2,6 @@ import 'package:quiver/strings.dart';
 import 'package:http/http.dart' as http;
 import 'package:flutter/material.dart';
 
-// To parse this JSON data, do
-//
-//     final welcome = welcomeFromJson(jsonString);
-
 import 'dart:convert';
 
 NasaApi nasaApiFromJson(String str) => NasaApi.fromJson(json.decode(str));
