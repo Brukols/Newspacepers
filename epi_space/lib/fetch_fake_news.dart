@@ -79,7 +79,7 @@ class _ListPageState extends State<ListPage> {
               onPressed: () {},
             ),
             IconButton(
-              icon: Icon(Icons.collections, color: Colors.white),
+              icon: Icon(Icons.image, color: Colors.white),
               onPressed: () {
                 Navigator.push(
                   context,
@@ -87,11 +87,11 @@ class _ListPageState extends State<ListPage> {
                 );},
             ),
             IconButton(
-              icon: Icon(Icons.hotel, color: Colors.white),
+              icon: Icon(Icons.playlist_add_check, color: Colors.white),
               onPressed: () {},
             ),
             IconButton(
-              icon: Icon(Icons.account_box, color: Colors.white),
+              icon: Icon(Icons.search, color: Colors.white),
               onPressed: () {},
             )
           ],
@@ -103,11 +103,8 @@ class _ListPageState extends State<ListPage> {
       backgroundColor: Color.fromRGBO(29, 31, 72, 1.0),
       title: Text(widget.title),
       actions: <Widget>[
-        IconButton(
-          icon: Icon(Icons.list),
-          onPressed: () {
-
-          },
+        Image(
+          image: AssetImage("assets/icon/logo.png")
         )
       ],
     );
