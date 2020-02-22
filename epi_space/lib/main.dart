@@ -10,7 +10,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter Demo',
       theme: new ThemeData(
-          primaryColor: Color.fromRGBO(58, 66, 86, 1.0), fontFamily: 'Raleway'),
+          primaryColor: Color.fromRGBO(29, 31, 72, 1.0), fontFamily: 'Raleway'),
       home: new ListPage(title: 'FakeNews'),
     );
   }

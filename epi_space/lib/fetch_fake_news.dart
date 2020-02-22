@@ -53,7 +53,7 @@ class _ListPageState extends State<ListPage> {
       elevation: 8.0,
       margin: new EdgeInsets.symmetric(horizontal: 10.0, vertical: 6.0),
       child: Container(
-        decoration: BoxDecoration(color: Color.fromRGBO(64, 75, 96, .9)),
+        decoration: BoxDecoration(color: Color.fromRGBO(29, 31, 72, 0.9)),
         child: makeListTile(fakenews),
       ),
     );
@@ -73,7 +73,7 @@ class _ListPageState extends State<ListPage> {
     final makeBottom = Container(
       height: 55.0,
       child: BottomAppBar(
-        color: Color.fromRGBO(58, 66, 86, 1.0),
+        color: Color.fromRGBO(29, 31, 72, 1.0),
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: <Widget>[
@@ -103,7 +103,7 @@ class _ListPageState extends State<ListPage> {
     );
     final topAppBar = AppBar(
       elevation: 0.1,
-      backgroundColor: Color.fromRGBO(58, 66, 86, 1.0),
+      backgroundColor: Color.fromRGBO(29, 31, 72, 1.0),
       title: Text(widget.title),
       actions: <Widget>[
         IconButton(
@@ -116,7 +116,7 @@ class _ListPageState extends State<ListPage> {
     );
 
     return Scaffold(
-      backgroundColor: Color.fromRGBO(58, 66, 86, 1.0),
+      backgroundColor: Color.fromRGBO(29, 31, 72, 1.0),
       appBar: topAppBar,
       body: makeBody,
       bottomNavigationBar: makeBottom,
