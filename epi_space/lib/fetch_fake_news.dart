@@ -1,3 +1,4 @@
+import 'package:epi_space/ImageDayRoute/ImageDayRoute.dart';
 import 'package:flutter/material.dart';
 import 'package:epi_space/model/fake_news.dart';
 import 'package:epi_space/detail_page.dart';
@@ -85,7 +86,7 @@ class _ListPageState extends State<ListPage> {
               onPressed: () {
                 Navigator.push(
                   context,
-                  MaterialPageRoute(builder: (context) => SecondRoute()),
+                  MaterialPageRoute(builder: (context) => ImageDayRoute()),
                 );},
             ),
             IconButton(
