@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:epi_space/model/lesson.dart';
+import 'package:epi_space/model/fake_news.dart';
 import 'package:epi_space/detail_page.dart';
 import 'package:epi_space/main.dart';
 
@@ -13,17 +13,17 @@ class ListPage extends StatefulWidget {
 }
 
 class _ListPageState extends State<ListPage> {
-  List lessons;
+  List fakenews_list;
 
   @override
   void initState() {
-    lessons = getLessons();
+    fakenews_list = getFakeNews();
     super.initState();
   }
 
   @override
   Widget build(BuildContext context) {
-    ListTile makeListTile(Lesson lesson) => ListTile(
+    ListTile makeListTile(FakeNews fakenews) => ListTile(
       contentPadding:
       EdgeInsets.symmetric(horizontal: 20.0, vertical: 10.0),
       leading: Container(
@@ -34,7 +34,7 @@ class _ListPageState extends State<ListPage> {
         child: Icon(Icons.autorenew, color: Colors.white),
       ),
       title: Text(
-        lesson.title,
+        fakenews.title,
         style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold),
       ),
       // subtitle: Text("Intermediate", style: TextStyle(color: Colors.white)),
@@ -47,14 +47,14 @@ class _ListPageState extends State<ListPage> {
                 // tag: 'hero',
                 child: LinearProgressIndicator(
                     backgroundColor: Color.fromRGBO(209, 224, 224, 0.2),
-                    value: lesson.indicatorValue,
+                    value: fakenews.indicatorValue,
                     valueColor: AlwaysStoppedAnimation(Colors.green)),
               )),
           Expanded(
             flex: 4,
             child: Padding(
                 padding: EdgeInsets.only(left: 10.0),
-                child: Text(lesson.level,
+                child: Text(fakenews.level,
                     style: TextStyle(color: Colors.white))),
           )
         ],
@@ -65,16 +65,16 @@ class _ListPageState extends State<ListPage> {
         Navigator.push(
             context,
             MaterialPageRoute(
-                builder: (context) => DetailPage(lesson: lesson)));
+                builder: (context) => DetailPage(fakenews: fakenews)));
       },
     );
 
-    Card makeCard(Lesson lesson) => Card(
+    Card makeCard(FakeNews fakenews) => Card(
       elevation: 8.0,
       margin: new EdgeInsets.symmetric(horizontal: 10.0, vertical: 6.0),
       child: Container(
         decoration: BoxDecoration(color: Color.fromRGBO(64, 75, 96, .9)),
-        child: makeListTile(lesson),
+        child: makeListTile(fakenews),
       ),
     );
 
@@ -83,9 +83,9 @@ class _ListPageState extends State<ListPage> {
       child: ListView.builder(
         scrollDirection: Axis.vertical,
         shrinkWrap: true,
-        itemCount: lessons.length,
+        itemCount: fakenews_list.length,
         itemBuilder: (BuildContext context, int index) {
-          return makeCard(lessons[index]);
+          return makeCard(fakenews_list[index]);
         },
       ),
     );
@@ -145,51 +145,51 @@ class _ListPageState extends State<ListPage> {
 }
 
 
-List getLessons() {
+List getFakeNews() {
   return [
-    Lesson(
+    FakeNews(
         title: "Introduction to Driving",
         level: "Beginner",
         indicatorValue: 0.33,
         price: 20,
         content:
         "Start by taking a couple of minutes to read the info in this section. Launch your app and click on the Settings menu.  While on the settings page, click the Save button.  You should see a circular progress indicator display in the middle of the page and the user interface elements cannot be clicked due to the modal barrier that is constructed."),
-    Lesson(
+    FakeNews(
         title: "Observation at Junctions",
         level: "Beginner",
         indicatorValue: 0.33,
         price: 50,
         content:
         "Start by taking a couple of minutes to read the info in this section. Launch your app and click on the Settings menu.  While on the settings page, click the Save button.  You should see a circular progress indicator display in the middle of the page and the user interface elements cannot be clicked due to the modal barrier that is constructed."),
-    Lesson(
+    FakeNews(
         title: "Reverse parallel Parking",
         level: "Intermidiate",
         indicatorValue: 0.66,
         price: 30,
         content:
         "Start by taking a couple of minutes to read the info in this section. Launch your app and click on the Settings menu.  While on the settings page, click the Save button.  You should see a circular progress indicator display in the middle of the page and the user interface elements cannot be clicked due to the modal barrier that is constructed."),
-    Lesson(
+    FakeNews(
         title: "Reversing around the corner",
         level: "Intermidiate",
         indicatorValue: 0.66,
         price: 30,
         content:
         "Start by taking a couple of minutes to read the info in this section. Launch your app and click on the Settings menu.  While on the settings page, click the Save button.  You should see a circular progress indicator display in the middle of the page and the user interface elements cannot be clicked due to the modal barrier that is constructed."),
-    Lesson(
+    FakeNews(
         title: "Incorrect Use of Signal",
         level: "Advanced",
         indicatorValue: 1.0,
         price: 50,
         content:
         "Start by taking a couple of minutes to read the info in this section. Launch your app and click on the Settings menu.  While on the settings page, click the Save button.  You should see a circular progress indicator display in the middle of the page and the user interface elements cannot be clicked due to the modal barrier that is constructed."),
-    Lesson(
+    FakeNews(
         title: "Engine Challenges",
         level: "Advanced",
         indicatorValue: 1.0,
         price: 50,
         content:
         "Start by taking a couple of minutes to read the info in this section. Launch your app and click on the Settings menu.  While on the settings page, click the Save button.  You should see a circular progress indicator display in the middle of the page and the user interface elements cannot be clicked due to the modal barrier that is constructed."),
-    Lesson(
+    FakeNews(
         title: "Self Driving Car",
         level: "Advanced",
         indicatorValue: 1.0,

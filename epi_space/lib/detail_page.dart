@@ -1,16 +1,16 @@
-import 'package:epi_space/model/lesson.dart';
+import 'package:epi_space/model/fake_news.dart';
 import 'package:flutter/material.dart';
 
 class DetailPage extends StatelessWidget {
-  final Lesson lesson;
-  DetailPage({Key key, this.lesson}) : super(key: key);
+  final FakeNews fakenews;
+  DetailPage({Key key, this.fakenews}) : super(key: key);
   @override
   Widget build(BuildContext context) {
     final levelIndicator = Container(
       child: Container(
         child: LinearProgressIndicator(
             backgroundColor: Color.fromRGBO(209, 224, 224, 0.2),
-            value: lesson.indicatorValue,
+            value: fakenews.indicatorValue,
             valueColor: AlwaysStoppedAnimation(Colors.green)),
       ),
     );
@@ -21,7 +21,7 @@ class DetailPage extends StatelessWidget {
           border: new Border.all(color: Colors.white),
           borderRadius: BorderRadius.circular(5.0)),
       child: new Text(
-        "\$" + lesson.price.toString(),
+        "\$" + fakenews.price.toString(),
         style: TextStyle(color: Colors.white),
       ),
     );
@@ -41,7 +41,7 @@ class DetailPage extends StatelessWidget {
         ),
         SizedBox(height: 10.0),
         Text(
-          lesson.title,
+          fakenews.title,
           style: TextStyle(color: Colors.white, fontSize: 45.0),
         ),
         SizedBox(height: 30.0),
@@ -54,7 +54,7 @@ class DetailPage extends StatelessWidget {
                 child: Padding(
                     padding: EdgeInsets.only(left: 10.0),
                     child: Text(
-                      lesson.level,
+                      fakenews.level,
                       style: TextStyle(color: Colors.white),
                     ))),
             Expanded(flex: 1, child: coursePrice)
@@ -97,7 +97,7 @@ class DetailPage extends StatelessWidget {
     );
 
     final bottomContentText = Text(
-      lesson.content,
+      fakenews.content,
       style: TextStyle(fontSize: 18.0),
     );
     final readButton = Container(

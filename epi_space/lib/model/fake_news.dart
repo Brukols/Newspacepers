@@ -1,10 +1,10 @@
-class Lesson {
+class FakeNews {
   String title;
   String level;
   double indicatorValue;
   int price;
   String content;
 
-  Lesson(
+  FakeNews(
       {this.title, this.level, this.indicatorValue, this.price, this.content});
 }
