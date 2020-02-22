@@ -1,4 +1,5 @@
 import 'package:epi_space/ImageDayRoute/ImageDayRoute.dart';
+import 'package:epi_space/SearchImages/SearchImagesRoute.dart';
 import 'package:flutter/material.dart';
 import 'package:epi_space/fakenews/fake_news.dart';
 import 'package:epi_space/fakenews/detail_page.dart';
@@ -92,7 +93,10 @@ class _ListPageState extends State<ListPage> {
             IconButton(
               icon: Icon(Icons.search, color: Colors.white),
               onPressed: () {
-
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => SearchImagesRoute()),
+                );
               },
             )
           ],
