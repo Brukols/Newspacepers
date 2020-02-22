@@ -1,8 +1,7 @@
 import 'package:epi_space/ImageDayRoute/ImageDayRoute.dart';
 import 'package:flutter/material.dart';
-import 'package:epi_space/model/fake_news.dart';
-import 'package:epi_space/detail_page.dart';
-import 'package:epi_space/main.dart';
+import 'package:epi_space/fakenews/fake_news.dart';
+import 'package:epi_space/fakenews/detail_page.dart';
 
 class ListPage extends StatefulWidget {
   ListPage({Key key, this.title}) : super(key: key);

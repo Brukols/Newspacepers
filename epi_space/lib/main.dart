@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:epi_space/fetch_fake_news.dart';
+import 'package:epi_space/fakenews/fetch_fake_news.dart';
 
 void main() => runApp(MyApp());
 

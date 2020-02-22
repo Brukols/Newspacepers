@@ -1,4 +1,4 @@
-import 'package:epi_space/model/fake_news.dart';
+import 'package:epi_space/fakenews/fake_news.dart';
 import 'package:flutter/material.dart';
 
 class DetailPage extends StatelessWidget {
