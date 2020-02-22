@@ -31,7 +31,7 @@ class _ListPageState extends State<ListPage> {
         decoration: new BoxDecoration(
             border: new Border(
                 right: new BorderSide(width: 1.0, color: Colors.white24))),
-        child: Icon(Icons.autorenew, color: Colors.white),
+        child: Image.asset(fakenews.imgPath, width: 50, height: 50),
       ),
       title: Text(
         fakenews.title,
@@ -128,30 +128,37 @@ List getFakeNews() {
   return [
     FakeNews(
         title: "Grèves : Thomas Pesquet se résout à faire le trajet à pied entre deux astéroïdes",
+        imgPath: "assets/articles/1.jpg",
         content:
         "Start by taking a couple of minutes to read the info in this section. Launch your app and click on the Settings menu.  While on the settings page, click the Save button.  You should see a circular progress indicator display in the middle of the page and the user interface elements cannot be clicked due to the modal barrier that is constructed. Start by taking a couple of minutes to read the info in this section. Launch your app and click on the Settings menu.  While on the settings page, click the Save button.  You should see a circular progress indicator display in the middle of the page and the user interface elements cannot be clicked due to the modal barrier that is constructed."),
     FakeNews(
         title: "Donald Trump veut envoyer une mission habitée sur la face cachée du Soleil",
+        imgPath: "assets/articles/2.jpg",
         content:
         "Start by taking a couple of minutes to read the info in this section. Launch your app and click on the Settings menu.  While on the settings page, click the Save button.  You should see a circular progress indicator display in the middle of the page and the user interface elements cannot be clicked due to the modal barrier that is constructed."),
     FakeNews(
         title: "Suite à un accident sur l'astroroute de Mars, la circulation est rendue difficile entre Vénus et Jupiter",
+        imgPath: "assets/articles/3.jpg",
         content:
         "Start by taking a couple of minutes to read the info in this section. Launch your app and click on the Settings menu.  While on the settings page, click the Save button.  You should see a circular progress indicator display in the middle of the page and the user interface elements cannot be clicked due to the modal barrier that is constructed."),
     FakeNews(
         title: "La NASA découvre trois trottinettes abandonnées sur Mars",
+        imgPath: "assets/articles/4.jpg",
         content:
         "Start by taking a couple of minutes to read the info in this section. Launch your app and click on the Settings menu.  While on the settings page, click the Save button.  You should see a circular progress indicator display in the middle of the page and the user interface elements cannot be clicked due to the modal barrier that is constructed."),
     FakeNews(
         title: "Pollution - Des micro-plastiques déjà détectés à l'intérieur du trou noir M87*",
+        imgPath: "assets/articles/5.jpg",
         content:
         "Start by taking a couple of minutes to read the info in this section. Launch your app and click on the Settings menu.  While on the settings page, click the Save button.  You should see a circular progress indicator display in the middle of the page and the user interface elements cannot be clicked due to the modal barrier that is constructed."),
     FakeNews(
         title: "Espace - Christophe Castaner présente son nouveau satellite lanceur de balles de défense",
+        imgPath: "assets/articles/6.jpg",
         content:
         "Start by taking a couple of minutes to read the info in this section. Launch your app and click on the Settings menu.  While on the settings page, click the Save button.  You should see a circular progress indicator display in the middle of the page and the user interface elements cannot be clicked due to the modal barrier that is constructed."),
     FakeNews(
         title: "La NASA envisage de faire exploser la Lune pour en étudier les conséquences",
+        imgPath: "assets/articles/7.jpg",
         content:
         "Start by taking a couple of minutes to read the info in this section. Launch your app and click on the Settings menu.  While on the settings page, click the Save button.  You should see a circular progress indicator display in the middle of the page and the user interface elements cannot be clicked due to the modal barrier that is constructed.  ")
   ];
