@@ -81,7 +81,7 @@ class _ListPageState extends State<ListPage> {
               onPressed: () {},
             ),
             IconButton(
-              icon: Icon(Icons.blur_on, color: Colors.white),
+              icon: Icon(Icons.collections, color: Colors.white),
               onPressed: () {
                 Navigator.push(
                   context,
