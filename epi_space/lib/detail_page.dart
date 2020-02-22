@@ -64,21 +64,12 @@ class DetailPage extends StatelessWidget {
       fakenews.content,
       style: TextStyle(fontSize: 18.0),
     );
-    final readButton = Container(
-        padding: EdgeInsets.symmetric(vertical: 16.0),
-        width: MediaQuery.of(context).size.width,
-        child: RaisedButton(
-          onPressed: () => {},
-          color: Color.fromRGBO(58, 66, 86, 1.0),
-          child:
-              Text("TAKE THIS LESSON", style: TextStyle(color: Colors.white)),
-        ));
     final bottomContent = Container(
       width: MediaQuery.of(context).size.width,
       padding: EdgeInsets.all(40.0),
       child: Center(
         child: Column(
-          children: <Widget>[bottomContentText, readButton],
+          children: <Widget>[bottomContentText],
         ),
       ),
     );
