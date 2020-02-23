@@ -60,6 +60,20 @@ class DetailPage extends StatelessWidget {
       ],
     );
 
+    final mediumContentText = Text(
+      fakenews.intro,
+      style: TextStyle(color: Colors.black, fontSize: 18.0, fontWeight: FontWeight.bold),
+    );
+    final mediumContent = Container(
+      width: MediaQuery.of(context).size.width,
+      padding: EdgeInsets.only(left: 40, right: 40, top: 40),
+      child: Center(
+        child: Column(
+          children: <Widget>[mediumContentText],
+        ),
+      ),
+    );
+
     final bottomContentText = Text(
       fakenews.content,
       style: TextStyle(fontSize: 18.0),
@@ -76,7 +90,7 @@ class DetailPage extends StatelessWidget {
 
     return Scaffold(
       body: ListView(
-        children: <Widget>[topContent, bottomContent],
+        children: <Widget>[topContent, mediumContent, bottomContent],
       ),
     );
   }

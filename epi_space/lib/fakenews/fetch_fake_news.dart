@@ -146,8 +146,7 @@ List getFakeNews() {
     FakeNews(
         title: "Grèves : Thomas Pesquet se résout à faire le trajet à pied entre deux astéroïdes",
         imgPath: "assets/articles/1.jpg",
-        content:
-        "Malgré la grève des transports, les Français déploient des "
+        intro: "Malgré la grève des transports, les Français déploient des "
             "ressources inattendues pour se rendre au travail. C’est le cas "
             "de l’astronaute Thomas Pesquet qui s’est résolu à faire le "
             "trajet à pied entre deux astéroïdes. Reportage.\n“En temps "
@@ -156,7 +155,9 @@ List getFakeNews() {
             "s’aventurant hors du sas de décompression. “Bien sûr c’est plus "
             "long de quelques petites années-lumière mais regardez cette vue "
             "! Ça vaut le coup non ?” s’enthousiasme-t-il devant un "
-            "magnifique clair de Terre.\n\nContrairement à d’autres "
+            "magnifique clair de Terre.\n",
+        content:
+            "\nContrairement à d’autres "
             "astronautes, Thomas prend les grèves avec philosophie. “C’est "
             "l’occasion de faire un peu de sport, de s’aérer, d’entretenir "
             "ses réflexes” explique-t-il en évitant une pluie d’astéroïdes "
@@ -173,11 +174,12 @@ List getFakeNews() {
     FakeNews(
         title: "Donald Trump veut envoyer une mission habitée sur la face cachée du Soleil",
         imgPath: "assets/articles/2.jpg",
-        content: "Washington – Avant Mars et la Lune, le Soleil. Donald Trump"
+        intro: "Washington – Avant Mars et la Lune, le Soleil. Donald Trump"
             " a exhorté la NASA à envoyer une mission humaine habitée au plus"
             " vite vers la face cachée du Soleil, avant que les Russes ou les"
             " Chinois ne fassent de même et ne volent la domination "
-            "américaine spatiale. Reportage.\n\n« Il y a beaucoup de choses à"
+            "américaine spatiale. Reportage.\n",
+        content: "\n« Il y a beaucoup de choses à"
             " découvrir sur cette face cachée du Soleil, peut-être des choses"
             " que nous ne connaissons pas car elle est masquée, on ne la "
             "voit, elle est tout à fait derrière le Soleil, dans l’ombre » a "
@@ -199,9 +201,10 @@ List getFakeNews() {
     FakeNews(
         title: "Suite à un accident sur l'astroroute de Mars, la circulation est rendue difficile entre Vénus et Jupiter",
         imgPath: "assets/articles/3.jpg",
-        content: "D’importants ralentissements sont à signaler à proximité de"
+        intro: "D’importants ralentissements sont à signaler à proximité de"
             " la Terre et de son satellite, les vaisseaux circulant sur cet "
-            "axe sont invités à utiliser les itinéraires Bis.\n\nEn raison "
+            "axe sont invités à utiliser les itinéraires Bis.\n",
+        content: "\nEn raison "
             "d’une collision avec un satellite d’observation terrien, la "
             "circulation est momentanément interrompue sur l’astroroute AZ "
             "455 qui passe directement à proximité de l’orbite de Mars. « "
@@ -218,11 +221,12 @@ List getFakeNews() {
     FakeNews(
         title: "La NASA découvre trois trottinettes abandonnées sur Mars",
         imgPath: "assets/articles/4.jpg",
-        content: "C’est une nouvelle qui risque de faire couler beaucoup "
+        intro: "C’est une nouvelle qui risque de faire couler beaucoup "
             "d’encre : après la découverte de traces d’eau et d’oxygène par "
             "le robot Curiosity dans l’atmosphère martienne, le nouvel "
             "astromobile de la NASA a heurté la nuit dernière trois "
-            "trottinettes parfaitement conservées.\n\nLes clichés ont "
+            "trottinettes parfaitement conservées.\n",
+        content: "\nLes clichés ont "
             "rapidement fait le tour de la communauté scientifique et été "
             "passées au crible par les spécialistes. “Les trottinettes "
             "étaient accrochées les unes aux autres ce qui laisse penser que "
@@ -245,10 +249,11 @@ List getFakeNews() {
     FakeNews(
         title: "Pollution - Des micro-plastiques déjà détectés à l'intérieur du trou noir M87*",
         imgPath: "assets/articles/5.jpg",
-        content: "La fête aura été de courte durée. La joie de la découverte "
+        intro: "La fête aura été de courte durée. La joie de la découverte "
             "et de la première photo du trou noir M87* a été contrebalancée "
             "par les premiers signes d’une pollution massive aux "
-            "micro-plastiques au sein même du trou noir. Reportage.\n\nLa "
+            "micro-plastiques au sein même du trou noir. Reportage.\n",
+        content: "\nLa "
             "faute à la diffusion massive des photos sur internet et sur les "
             "réseaux sociaux qui a provoqué un afflux massif de visiteurs aux"
             " abords du trou noir. Conséquence : le site est déjà très "
@@ -267,14 +272,16 @@ List getFakeNews() {
             "recouvrir les parois du trou noir avec de larges affiches FREXIT"
             " ainsi que par des colleurs d’affiches de Nicolas Miguet.\n\n"),
     FakeNews(
-        title: "Espace - Christophe Castaner présente son nouveau satellite lanceur de balles de défense",
+        title: "Espace - Christophe Castaner présente son nouveau satellite "
+          "lanceur de balles de défense",
         imgPath: "assets/articles/6.jpg",
-        content: "Paris – Le Ministère de l’intérieur a présenté en fanfare "
+        intro: "Paris – Le Ministère de l’intérieur a présenté en fanfare "
             "ce jour son nouveau « jouet », un satellite orbital lanceur de "
             "balles de défense (LBD)  capable depuis l’espace de lancer "
             "plusieurs balles de défense sur une manifestation non autorisée "
             "ou toute personne qui critique l’action de notre ministre de "
-            "l’intérieur. Reportage.\n\nLe satellite sera placé en orbite "
+            "l’intérieur. Reportage.\n",
+        content: "\nLe satellite sera placé en orbite "
             "géostationnaire, à près de 14 000 km d’altitude et sera à même "
             "de viser une personne avec une marge d’erreur réduite à 20 km. «"
             " Si vous n’avez rien à vous reprocher vous n’avez rien à "
@@ -290,11 +297,13 @@ List getFakeNews() {
             "150 m par secondes, permettant de neutraliser une manifestation "
             "en moins de 4 secondes.\n\n"),
     FakeNews(
-        title: "La NASA envisage de faire exploser la Lune pour en étudier les conséquences",
+        title: "La NASA envisage de faire exploser la Lune pour en étudier "
+            "les conséquences",
         imgPath: "assets/articles/7.jpg",
-        content: "L’agence spatiale américaine a peut-être trouvé une "
+        intro: "L’agence spatiale américaine a peut-être trouvé une "
             "nouvelle odyssée : faire exploser la Lune pour pouvoir mieux en "
-            "étudier ses effets, et les conséquences de sa disparition.\n"
+            "étudier ses effets, et les conséquences de sa disparition.\n",
+        content:
             "\nEdgar Phillips-Garret est l’homme qui se cache derrière cette "
             "idée folle d’envoyer sur la Lune une sonde équipée d’une charge "
             "explosive suffisamment forte pour définitivement la faire "
@@ -308,5 +317,63 @@ List getFakeNews() {
             "Entièrement financées par des fonds privés, ces recherches "
             "pourraient offrir à une partie de la communauté scientifique de "
             "quoi s’occuper pendant les 30 prochaines années.\n\n"),
-  ];
+    FakeNews(
+        title: "Une nouvelle planète inutile découverte super loin de chez nous",
+        imgPath: "assets/articles/8.jpg",
+        intro: "Hier soir, la Nasa a confirmé la découverte d’une nouvelle "
+            "planète baptisée Kepler 4567. Une planète à des millions d’années "
+            "lumière, inhabitable, et donc totalement inutile.\n",
+        content:
+            "Toutes les rédactions de revues d’astronomie saluaient hier la "
+            "découverte d’une nouvelle planète. « C’est une planète recouverte "
+            "de gaz et de lave, la température y avoisine les 500 degrés le "
+            "jour et, les – 300 degrés la nuit. La vie y est totalement "
+            "impossible, le paysage, toujours le même. Aucun vaisseau n’a la "
+            "capacité de s’y rendre. Quelle découverte incroyable ! » "
+            "s’extasiait Jean-René, astronome français.La nouvelle planète a "
+            "été le résultat de plus de 50 ans de recherches, et de plus de "
+            "800 millions d’euros de dépenses. Elle est totalement invisible "
+            "à l’œil nu ; seuls deux télescopes peuvent l’observer dont "
+            "l’utilisation est strictement réservée aux astronomes. Les "
+            "photos prises de la planète ne donnent absolument rien à cause de "
+            "la position de son soleil. « Son inutilité est complète, c’est un "
+            "moment magique pour moi » confirme Marc, qui a travaillé sur le "
+            "projet, tout en mettant un Post-it avec le nom de la planète sur "
+            "sa carte des étoiles que seul lui peut comprendre.\n"
+            "Suite à la découverte de cette planète, nous n’en savons donc "
+            "pas plus sur l’origine de la vie, ni sur la présence d’autres "
+            "civilisations ou même sur l’espoir, qu’un jour, peut être, nous "
+            "pourrions nous rendre sur une exoplanète habitable. Une preuve "
+            "encore que l’espace n’a pas fini de nous livrer des secrets "
+            "totalement inutiles.\n\n"),
+    FakeNews(
+        title: "Celui qui affiche le logo de la NASA sur son t-shirt n’a en "
+            "fait jamais mis un pied dans l’espace",
+        imgPath: "assets/articles/10.png",
+        intro: "Un jeune homme a déçu tout son entourage après qu’il a avoué "
+            "que malgré le logo « NASA » sur son t-shirt, il n’avait jamais "
+            "mis un pied dans l’espace. Récit.\n",
+        content: "C’est un drôle de sentiment qui a envahi Léonard lorsqu’il a lu "
+            "une déception unanime dans les yeux de ses camarades : « Je n’aurai "
+            "jamais pu imaginer qu’ils pensaient tous que je travaillais "
+            "réellement à la NASA, à cause de ce t-shirt. Mon ami Malo porte "
+            "tous les jours un haut de la marque Ralph Lauren et pourtant je "
+            "sais qu’il n’a jamais joué au polo de sa vie » soupire-t-il"
+            "rongé par les remords.\n"
+            "« Il aurait pu nous le dire, quand même. Si j’avais su je ne "
+            "l’aurais jamais invité à mon anniversaire. Je trouvais ça classe "
+            "d’avoir un ami de la NASA, au lieu de ça ce n’est un vulgaire élève "
+            "de Sciences Po. Quelle déception ! » s’insurge Pierre, ami de "
+            "Léonard depuis presque 10 ans. Lorsqu’on interroge d’autres de ses "
+            "connaissances, le ton est le même, un mot revient sans cesse : "
+            "« trahison ».\n"
+            "L’intéressé est dépité par la situation : « Après leur avoir avoué "
+            "que je n’avais jamais mis un pied dans l’espace, j’ai pris les "
+            "devants et avoué que malgré mes baskets Adidas, je n’avais jamais "
+            "participé à une grande compétition sportive. Ça a été la goutte qui "
+            "a fait déborder le vase. Je n’ai plus aucun ami » termine Léonard, "
+            "dans un sanglot, en tenant sa tête entre ses mains. Tête habillée "
+            "d’une casquette des Yankees de New-York, sans doute le souvenir "
+            "d’une carrière professionnelle dans le baseball.\n\n"),
+    ];
 }
