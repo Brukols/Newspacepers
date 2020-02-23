@@ -50,7 +50,7 @@ class _NewsRssState extends State<NewsRssRoute> {
                             onPressed: () {
                                 Navigator.push(
                                     context,
-                                    MaterialPageRoute(builder: (context) => Quizz()),
+                                    MaterialPageRoute(builder: (context) => ListPage(title:"News")),
                                 );
                             },
                         ),
@@ -59,7 +59,7 @@ class _NewsRssState extends State<NewsRssRoute> {
                             onPressed: () {
                                 Navigator.push(
                                     context,
-                                    MaterialPageRoute(builder: (context) => ListPage(title:"News")),
+                                    MaterialPageRoute(builder: (context) => Quizz()),
                                 );
                             },
                         ),
