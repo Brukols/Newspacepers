@@ -25,6 +25,7 @@ class ImageDayRoute extends StatelessWidget {
                 if (map.hasData) {
                     return (Container(
                         alignment: Alignment.topCenter,
+                        margin: const EdgeInsets.only(left: 30.0, right: 10.0),
                         child: Text(
                             map.data["title"],
                             style: TextStyle(
@@ -56,7 +57,7 @@ class ImageDayRoute extends StatelessWidget {
                                 margin: EdgeInsets.all(24),
                                 child: FadeInImage.memoryNetwork(
                                         placeholder: kTransparentImage,
-                                        image: map.data["url"],
+                                        image: (map.data["media_type"] == "video" ? "https://s3.amazonaws.com/open-nasa-files/images/apod1_copy.original.jpg" : map.data["url"]),
                                         width: 340,
                                         height: 200,
                                         fit: BoxFit.fill,
