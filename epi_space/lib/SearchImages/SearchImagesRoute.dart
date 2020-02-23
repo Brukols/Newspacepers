@@ -1,21 +1,91 @@
+import 'package:epi_space/ImageDayRoute/ImageDayRoute.dart';
 import 'package:flutter/material.dart';
 import 'package:epi_space/http/HttpService.dart';
 import 'package:transparent_image/transparent_image.dart';
 import 'package:epi_space/news/MyWebView.dart';
+import 'package:epi_space/news/NewsRssRoute.dart';
+import 'package:epi_space/fakenews/fetch_fake_news.dart';
+import 'package:epi_space/quizz/quizz.dart';
 
 class SearchImagesRoute extends StatelessWidget
 {
+
     @override
     Widget build(BuildContext context) {
-        return Scaffold(
-            appBar: AppBar(
-                title: Text("Recherche"),
+
+        final topAppBar = AppBar(
+            elevation: 0.1,
+            backgroundColor: Color.fromRGBO(29, 31, 72, 1.0),
+            title: Text("Recherche"),
+            actions: <Widget>[
+                Image(
+                    image: AssetImage("assets/icon/logo.png")
+                )
+            ],
+        );
+
+        final makeBottom = Container(
+            height: 55.0,
+            child: BottomAppBar(
+                color: Color.fromRGBO(29, 31, 72, 1.0),
+                child: Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                    children: <Widget>[
+                        IconButton(
+                            icon: Icon(Icons.thumb_up, color: Colors.white),
+                            onPressed: () {
+                                Navigator.push(
+                                    context,
+                                    MaterialPageRoute(builder: (context) => NewsRssRoute()),
+                                );
+                            },
+                        ),
+                        IconButton(
+                            icon: Icon(Icons.thumb_down, color: Colors.white),
+                            onPressed: () {
+                                Navigator.push(
+                                    context,
+                                    MaterialPageRoute(builder: (context) =>
+                                        ListPage(title: 'Fake News')),
+                                );
+                            },
+                        ),
+                        IconButton(
+                            icon: Icon(Icons.thumbs_up_down, color: Colors.white),
+                            onPressed: () {
+                                Navigator.push(
+                                    context,
+                                    MaterialPageRoute(builder: (context) => Quizz()),
+                                );
+                            },
+                        ),
+                        IconButton(
+                            icon: Icon(Icons.image, color: Colors.white),
+                            onPressed: () {
+                                Navigator.push(
+                                    context,
+                                    MaterialPageRoute(builder: (context) => ImageDayRoute()),
+                                );
+                            },
+                        ),
+                        IconButton(
+                            icon: Icon(Icons.search, color: Colors.white),
+                            onPressed: () {
+                            },
+                        )
+                    ],
+                ),
             ),
+        );
+
+        return Scaffold(
+            appBar: topAppBar,
             body: SafeArea(
                 child: Center(
                     child: ViewSearchImage(),
                 ),
             ),
+            bottomNavigationBar: makeBottom,
         );
   }
 }
