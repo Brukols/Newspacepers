@@ -4,6 +4,7 @@ import 'package:epi_space/news/NewsRssRoute.dart';
 import 'package:flutter/material.dart';
 import 'package:epi_space/fakenews/fake_news.dart';
 import 'package:epi_space/fakenews/detail_page.dart';
+import 'package:epi_space/quizz/quizz.dart';
 
 class ListPage extends StatefulWidget {
   ListPage({Key key, this.title}) : super(key: key);
@@ -91,7 +92,12 @@ class _ListPageState extends State<ListPage> {
             ),
             IconButton(
               icon: Icon(Icons.thumbs_up_down, color: Colors.white),
-              onPressed: () {},
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => Quizz()),
+                );
+              },
             ),
             IconButton(
               icon: Icon(Icons.image, color: Colors.white),
