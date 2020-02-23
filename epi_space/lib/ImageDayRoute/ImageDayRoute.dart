@@ -15,7 +15,7 @@ class ImageDayRoute extends StatelessWidget {
 
         final loaderPage = Container(
             alignment: Alignment.topCenter,
-            margin: EdgeInsets.only(top: 250),
+            margin: EdgeInsets.only(top: 150),
             child: CircularProgressIndicator()
         );
 
@@ -34,7 +34,7 @@ class ImageDayRoute extends StatelessWidget {
                         ),
                     ));
                 }
-                return (loaderPage);
+                return (Text(""));
             }
         );
 
@@ -102,7 +102,7 @@ class ImageDayRoute extends StatelessWidget {
                         ),
                     ));
                 }
-                return (Text(""));
+                return (loaderPage);
             },
         );
 
@@ -116,7 +116,6 @@ class ImageDayRoute extends StatelessWidget {
                             Icons.format_quote,
                             color: Colors.blueGrey,
                             size: 50.0,
-                            semanticLabel: 'Text to announce in accessibility modes',
                         ),
                     ));
                 }
