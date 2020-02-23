@@ -88,7 +88,7 @@ class _NewsRssState extends State<NewsRssRoute> {
         final topAppBar = AppBar(
             elevation: 0.1,
             backgroundColor: Color.fromRGBO(29, 31, 72, 1.0),
-            title: Text("Les derniers articles"),
+            title: Text("NewSpacepers"),
             actions: <Widget>[
                 Image(
                     image: AssetImage("assets/icon/logo.png")

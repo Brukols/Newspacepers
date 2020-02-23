@@ -1,7 +1,3 @@
-import 'package:quiver/strings.dart';
-import 'package:http/http.dart' as http;
-import 'package:flutter/material.dart';
-
 import 'dart:convert';
 
 NasaApi nasaApiFromJson(String str) => NasaApi.fromJson(json.decode(str));

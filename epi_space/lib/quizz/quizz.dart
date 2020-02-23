@@ -1,4 +1,3 @@
-import 'package:epi_space/fakenews/fake_news.dart';
 import 'package:epi_space/fakenews/fetch_fake_news.dart';
 import 'package:epi_space/news/NewsRssRoute.dart';
 import 'package:epi_space/ImageDayRoute/ImageDayRoute.dart';
@@ -214,19 +213,13 @@ List getQuizz() {
       color: Colors.white,
     ),
     QuestionQuizz(
-      question: "Il y a des astéroides qui croisent l'orbite de la Terre ?",
-      answer: true,
-      icon: Icons.thumbs_up_down,
-      color: Colors.white,
-    ),
-    QuestionQuizz(
       question: "Notre satellite naturel s'appelle la Lune ?",
       answer: false,
       icon: Icons.thumbs_up_down,
       color: Colors.white,
     ),
     QuestionQuizz(
-      question: "La grande tache rouge de Jupiter est un volcan de 27 000 kilomètres d'altitude ?",
+      question: "La grande tâche rouge de Jupiter est un volcan de 27 000 kilomètres d'altitude ?",
       answer: false,
       icon: Icons.thumbs_up_down,
       color: Colors.white,
