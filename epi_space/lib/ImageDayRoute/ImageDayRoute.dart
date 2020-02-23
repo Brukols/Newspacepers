@@ -4,6 +4,7 @@ import 'package:epi_space/fakenews/fetch_fake_news.dart';
 import 'package:flutter/material.dart';
 import 'package:epi_space/ImageDayRoute/HttpService.dart';
 import 'package:transparent_image/transparent_image.dart';
+import 'package:epi_space/quizz/quizz.dart';
 
 class ImageDayRoute extends StatelessWidget {
 
@@ -150,7 +151,12 @@ class ImageDayRoute extends StatelessWidget {
                         ),
                         IconButton(
                             icon: Icon(Icons.thumbs_up_down, color: Colors.white),
-                            onPressed: () {},
+                            onPressed: () {
+                                Navigator.push(
+                                    context,
+                                    MaterialPageRoute(builder: (context) => Quizz()),
+                                );
+                            },
                         ),
                         IconButton(
                             icon: Icon(Icons.image, color: Colors.white),
