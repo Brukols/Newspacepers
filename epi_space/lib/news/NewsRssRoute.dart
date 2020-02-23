@@ -4,6 +4,7 @@ import 'package:epi_space/fakenews/fetch_fake_news.dart';
 import 'package:flutter/material.dart';
 import 'package:webfeed/webfeed.dart';
 import 'package:epi_space/news/MyWebView.dart';
+import 'package:epi_space/quizz/quizz.dart';
 import 'package:http/http.dart' as http;
 
 class NewsRssRoute extends StatefulWidget {
@@ -41,21 +42,26 @@ class _NewsRssState extends State<NewsRssRoute> {
                     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                     children: <Widget>[
                         IconButton(
-                            icon: Icon(Icons.fiber_new, color: Colors.white),
+                            icon: Icon(Icons.thumb_up, color: Colors.white),
+                            onPressed: () {},
+                        ),
+                        IconButton(
+                            icon: Icon(Icons.thumb_down, color: Colors.white),
                             onPressed: () {
                                 Navigator.push(
                                     context,
-                                    MaterialPageRoute(builder: (context) => ListPage(title: 'News')),
+                                    MaterialPageRoute(builder: (context) => ListPage(title:"News")),
                                 );
                             },
                         ),
                         IconButton(
-                            icon: Icon(Icons.chrome_reader_mode, color: Colors.white),
+                            icon: Icon(Icons.thumbs_up_down, color: Colors.white),
                             onPressed: () {
                                 Navigator.push(
                                     context,
-                                    MaterialPageRoute(builder: (context) => NewsRssRoute()),
-                                );},
+                                    MaterialPageRoute(builder: (context) => Quizz()),
+                                );
+                            },
                         ),
                         IconButton(
                             icon: Icon(Icons.image, color: Colors.white),
@@ -64,10 +70,6 @@ class _NewsRssState extends State<NewsRssRoute> {
                                     context,
                                     MaterialPageRoute(builder: (context) => ImageDayRoute()),
                                 );},
-                        ),
-                        IconButton(
-                            icon: Icon(Icons.playlist_add_check, color: Colors.white),
-                            onPressed: () {},
                         ),
                         IconButton(
                             icon: Icon(Icons.search, color: Colors.white),
@@ -83,10 +85,19 @@ class _NewsRssState extends State<NewsRssRoute> {
             ),
         );
 
+        final topAppBar = AppBar(
+            elevation: 0.1,
+            backgroundColor: Color.fromRGBO(29, 31, 72, 1.0),
+            title: Text("Les derniers articles"),
+            actions: <Widget>[
+                Image(
+                    image: AssetImage("assets/icon/logo.png")
+                )
+            ],
+        );
+
         return new Scaffold(
-            appBar: new AppBar(
-                title: new Text("Les derniers articles"),
-            ),
+            appBar: topAppBar,
             body: futureBuilder,
             backgroundColor: Color.fromRGBO(58, 66, 86, 1.0),
             bottomNavigationBar: makeBottom,

@@ -1,3 +1,4 @@
+import 'package:epi_space/news/NewsRssRoute.dart';
 import 'package:flutter/material.dart';
 import 'package:epi_space/fakenews/fetch_fake_news.dart';
 
@@ -11,7 +12,7 @@ class MyApp extends StatelessWidget {
       title: 'EpiSpace',
       theme: new ThemeData(
           primaryColor: Color.fromRGBO(29, 31, 72, 1.0), fontFamily: 'Raleway'),
-      home: new ListPage(title: 'News'),
+      home: new NewsRssRoute(),
     );
   }
 }
