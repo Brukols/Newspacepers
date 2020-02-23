@@ -9,7 +9,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'EpiSpace',
+      title: 'NewSpacepers',
       theme: new ThemeData(
           primaryColor: Color.fromRGBO(29, 31, 72, 1.0), fontFamily: 'Raleway'),
       home: new NewsRssRoute(),
