@@ -76,16 +76,22 @@ class _ListPageState extends State<ListPage> {
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: <Widget>[
             IconButton(
-              icon: Icon(Icons.fiber_new, color: Colors.white),
-              onPressed: () {},
-            ),
-            IconButton(
-              icon: Icon(Icons.chrome_reader_mode, color: Colors.white),
+              icon: Icon(Icons.thumb_up, color: Colors.white),
               onPressed: () {
                 Navigator.push(
                   context,
                   MaterialPageRoute(builder: (context) => NewsRssRoute()),
-                );},
+                );
+              },
+            ),
+            IconButton(
+              icon: Icon(Icons.thumb_down, color: Colors.white),
+              onPressed: () {
+              },
+            ),
+            IconButton(
+              icon: Icon(Icons.thumbs_up_down, color: Colors.white),
+              onPressed: () {},
             ),
             IconButton(
               icon: Icon(Icons.image, color: Colors.white),
@@ -94,10 +100,6 @@ class _ListPageState extends State<ListPage> {
                   context,
                   MaterialPageRoute(builder: (context) => ImageDayRoute()),
                 );},
-            ),
-            IconButton(
-              icon: Icon(Icons.playlist_add_check, color: Colors.white),
-              onPressed: () {},
             ),
             IconButton(
               icon: Icon(Icons.search, color: Colors.white),

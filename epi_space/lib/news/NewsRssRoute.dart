@@ -41,7 +41,11 @@ class _NewsRssState extends State<NewsRssRoute> {
                     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                     children: <Widget>[
                         IconButton(
-                            icon: Icon(Icons.fiber_new, color: Colors.white),
+                            icon: Icon(Icons.thumb_up, color: Colors.white),
+                            onPressed: () {},
+                        ),
+                        IconButton(
+                            icon: Icon(Icons.thumb_down, color: Colors.white),
                             onPressed: () {
                                 Navigator.push(
                                     context,
@@ -50,12 +54,8 @@ class _NewsRssState extends State<NewsRssRoute> {
                             },
                         ),
                         IconButton(
-                            icon: Icon(Icons.chrome_reader_mode, color: Colors.white),
-                            onPressed: () {
-                                Navigator.push(
-                                    context,
-                                    MaterialPageRoute(builder: (context) => NewsRssRoute()),
-                                );},
+                            icon: Icon(Icons.thumbs_up_down, color: Colors.white),
+                            onPressed: () {},
                         ),
                         IconButton(
                             icon: Icon(Icons.image, color: Colors.white),
@@ -64,10 +64,6 @@ class _NewsRssState extends State<NewsRssRoute> {
                                     context,
                                     MaterialPageRoute(builder: (context) => ImageDayRoute()),
                                 );},
-                        ),
-                        IconButton(
-                            icon: Icon(Icons.playlist_add_check, color: Colors.white),
-                            onPressed: () {},
                         ),
                         IconButton(
                             icon: Icon(Icons.search, color: Colors.white),

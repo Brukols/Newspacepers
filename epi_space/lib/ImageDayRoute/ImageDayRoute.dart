@@ -1,3 +1,6 @@
+import 'package:epi_space/SearchImages/SearchImagesRoute.dart';
+import 'package:epi_space/news/NewsRssRoute.dart';
+import 'package:epi_space/fakenews/fetch_fake_news.dart';
 import 'package:flutter/material.dart';
 import 'package:epi_space/ImageDayRoute/HttpService.dart';
 import 'package:transparent_image/transparent_image.dart';
@@ -118,13 +121,62 @@ class ImageDayRoute extends StatelessWidget {
                 return (Text(""));
             },
         );
+
+        final makeBottom = Container(
+            height: 55.0,
+            child: BottomAppBar(
+                color: Color.fromRGBO(29, 31, 72, 1.0),
+                child: Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                    children: <Widget>[
+                        IconButton(
+                            icon: Icon(Icons.thumb_up, color: Colors.white),
+                            onPressed: () {
+                                Navigator.push(
+                                    context,
+                                    MaterialPageRoute(builder: (context) => NewsRssRoute()),
+                                );
+                            },
+                        ),
+                        IconButton(
+                            icon: Icon(Icons.thumb_down, color: Colors.white),
+                            onPressed: () {
+                                Navigator.push(
+                                    context,
+                                    MaterialPageRoute(builder: (context) => ListPage(title: 'News')),
+                                );
+                            },
+                        ),
+                        IconButton(
+                            icon: Icon(Icons.thumbs_up_down, color: Colors.white),
+                            onPressed: () {},
+                        ),
+                        IconButton(
+                            icon: Icon(Icons.image, color: Colors.white),
+                            onPressed: () {},
+                        ),
+                        IconButton(
+                            icon: Icon(Icons.search, color: Colors.white),
+                            onPressed: () {
+                                Navigator.push(
+                                    context,
+                                    MaterialPageRoute(builder: (context) => SearchImagesRoute()),
+                                );
+                            },
+                        )
+                    ],
+                ),
+            ),
+        );
+
         return Scaffold(
             appBar: AppBar(
                 title: Text("Photo du jour"),
             ),
             body: ListView(
                 children: <Widget>[nasaImage, nasaTitle, date, iconQuote, explanation],
-            )
+            ),
+            bottomNavigationBar: makeBottom,
         );
     }
 }
