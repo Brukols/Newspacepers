@@ -85,28 +85,16 @@ class _NewsRssState extends State<NewsRssRoute> {
 
         return new Scaffold(
             appBar: new AppBar(
-                title: new Text("News Articles on Space"),
+                title: new Text("Les derniers articles"),
             ),
             body: futureBuilder,
+            backgroundColor: Color.fromRGBO(58, 66, 86, 1.0),
             bottomNavigationBar: makeBottom,
         );
     }
 
     Future<RssFeed> getFeed() =>
         http.read(_targetUrl).then((xmlString) => RssFeed.parse(xmlString));
-
-    Future<List<String>> _getData() async {
-        var values = new List<String>();
-        values.add("Horses");
-        values.add("Goats");
-        values.add("Chickens");
-
-        //throw new Exception("Danger Will Robinson!!!");
-
-        await new Future.delayed(new Duration(seconds: 5));
-
-        return values;
-    }
 
     Widget createListView(BuildContext context, AsyncSnapshot snapshot) {
         List<RssItem> values = snapshot.data.items;
@@ -118,8 +106,8 @@ class _NewsRssState extends State<NewsRssRoute> {
                         child: ListTile(
                             leading: Image.network(values[index].enclosure.url),
                             title: Text(values[index].title),
-                            subtitle: Text(values[index].description
-                            ),
+                            subtitle: Text(values[index].description),
+
                             trailing: Icon(Icons.navigate_next),
                             isThreeLine: true,
                             onTap: () {
