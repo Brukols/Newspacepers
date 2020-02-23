@@ -20,7 +20,6 @@ class HttpServiceList
 
         List body = convert.jsonDecode(response.body);
 
-        print(body[1]);
         return (body);
     }
 }
