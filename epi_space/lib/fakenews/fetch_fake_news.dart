@@ -1,5 +1,6 @@
 import 'package:epi_space/ImageDayRoute/ImageDayRoute.dart';
 import 'package:epi_space/SearchImages/SearchImagesRoute.dart';
+import 'package:epi_space/news/NewsRssRoute.dart';
 import 'package:flutter/material.dart';
 import 'package:epi_space/fakenews/fake_news.dart';
 import 'package:epi_space/fakenews/detail_page.dart';
@@ -77,6 +78,14 @@ class _ListPageState extends State<ListPage> {
             IconButton(
               icon: Icon(Icons.fiber_new, color: Colors.white),
               onPressed: () {},
+            ),
+            IconButton(
+              icon: Icon(Icons.chrome_reader_mode, color: Colors.white),
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => NewsRssRoute()),
+                );},
             ),
             IconButton(
               icon: Icon(Icons.image, color: Colors.white),
