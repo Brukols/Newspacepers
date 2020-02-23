@@ -24,6 +24,7 @@ class ImageDayRoute extends StatelessWidget {
                 if (map.hasData) {
                     return (Container(
                         alignment: Alignment.topCenter,
+                        margin: const EdgeInsets.only(left: 30.0, right: 10.0),
                         child: Text(
                             map.data["title"],
                             style: TextStyle(
