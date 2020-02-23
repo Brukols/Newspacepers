@@ -4,6 +4,7 @@ import 'package:epi_space/fakenews/fetch_fake_news.dart';
 import 'package:flutter/material.dart';
 import 'package:webfeed/webfeed.dart';
 import 'package:epi_space/news/MyWebView.dart';
+import 'package:epi_space/quizz/quizz.dart';
 import 'package:http/http.dart' as http;
 
 class NewsRssRoute extends StatefulWidget {
@@ -49,14 +50,18 @@ class _NewsRssState extends State<NewsRssRoute> {
                             onPressed: () {
                                 Navigator.push(
                                     context,
-                                    MaterialPageRoute(builder: (context) =>
-                                        ListPage(title: 'Fake News')),
+                                    MaterialPageRoute(builder: (context) => ListPage(title:"News")),
                                 );
                             },
                         ),
                         IconButton(
                             icon: Icon(Icons.thumbs_up_down, color: Colors.white),
-                            onPressed: () {},
+                            onPressed: () {
+                                Navigator.push(
+                                    context,
+                                    MaterialPageRoute(builder: (context) => Quizz()),
+                                );
+                            },
                         ),
                         IconButton(
                             icon: Icon(Icons.image, color: Colors.white),
