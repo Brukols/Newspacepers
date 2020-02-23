@@ -17,7 +17,7 @@ class DetailPage extends StatelessWidget {
         ),
         Container(
           width: 90.0,
-          child: new Divider(color: Colors.green),
+          child: new Divider(color: Colors.white),
         ),
         SizedBox(height: 10.0),
         Text(

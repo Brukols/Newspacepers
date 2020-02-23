@@ -143,7 +143,8 @@ class ImageDayRoute extends StatelessWidget {
                             onPressed: () {
                                 Navigator.push(
                                     context,
-                                    MaterialPageRoute(builder: (context) => ListPage(title: 'News')),
+                                    MaterialPageRoute(builder: (context) =>
+                                        ListPage(title: 'Fake News')),
                                 );
                             },
                         ),
@@ -169,10 +170,19 @@ class ImageDayRoute extends StatelessWidget {
             ),
         );
 
+        final topAppBar = AppBar(
+            elevation: 0.1,
+            backgroundColor: Color.fromRGBO(29, 31, 72, 1.0),
+            title: Text("Photo du jour"),
+            actions: <Widget>[
+                Image(
+                    image: AssetImage("assets/icon/logo.png")
+                )
+            ],
+        );
+
         return Scaffold(
-            appBar: AppBar(
-                title: Text("Photo du jour"),
-            ),
+            appBar: topAppBar,
             body: ListView(
                 children: <Widget>[nasaImage, nasaTitle, date, iconQuote, explanation],
             ),
