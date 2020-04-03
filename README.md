@@ -1,16 +1,26 @@
-# epi_space
+# NewsSpacepers
 
-Tech some Space
+An application to inform you about the space ! :newspaper:
 
-## Getting Started
+## Description
 
-This project is a starting point for a Flutter application.
+This project has been done in two days for the an Epitech Jam. The theme of this Jam was space. :rocket:
 
-A few resources to get you started if this is your first Flutter project:
+With this application, you are inform about the news of the space thanks to Science et Avenir.
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+Be careful ! In this application there is a lot of Fake News, don't believe what we say. :smiling_imp:
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+But we are nice, so we have done a questionnaire to identify Fake News.
+
+And finally, you can also search for videos or images about space thanks to Nasa API.
+
+## Usage
+
+You must run this application with flutter. For more informations, click [here](https://medium.com/flutter-community/flutter-and-the-command-line-a-love-story-a3648ef2411).
+
+## Contribution
+
+This project has been made with :
+- [Benjamin Bourgeois](https://github.com/BourgeoisBenjamin)
+- [Oriane Aumoitte](https://github.com/noriae)
+- Celeste Bousseau
